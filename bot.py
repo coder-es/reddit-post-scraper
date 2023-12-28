@@ -1,9 +1,9 @@
 import praw
 
 reddit = praw.Reddit(
-    client_id='O0WZueTOzHS7NCLcdax7mA',
-    client_secret='GVXWhTrPNt6uvk2dVMZ9Gdz7bXjn3w',
-    user_agent='myredditpostscraper',
+    client_id='get your own',
+    client_secret='get your own',
+    user_agent='get your own',
 )
 
 def scrape_subreddit(subreddit_name, post_limit=100, comment_limit=5):
@@ -42,9 +42,5 @@ def scrape_subreddit(subreddit_name, post_limit=100, comment_limit=5):
             file.write("\n" + "-"*50 + "\n")
 
 if __name__ == "__main__":
-    subreddit_name = "explainlikeimfive"
+    subreddit_name = "@@@any public subreddit@@@"
     scrape_subreddit(subreddit_name)
-
-#O0WZueTOzHS7NCLcdax7mA
-#GVXWhTrPNt6uvk2dVMZ9Gdz7bXjn3w
-#myredditpostscraper
