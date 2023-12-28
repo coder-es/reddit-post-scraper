@@ -17,6 +17,7 @@ def scrape_subreddit(subreddit_name, post_limit=100, comment_limit=5):
             file.write(f"Author: {submission.author}\n")
             file.write(f"Score: {submission.score}\n")
             file.write(f"URL: {submission.url}\n")
+            file.write(f"Desc: {submission.selftext}\n")
 
             # Check if the post has zero comments
             if submission.num_comments == 0:
